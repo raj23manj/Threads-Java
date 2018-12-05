@@ -8,7 +8,7 @@ public class AnotherThread extends Thread{
        System.out.println(ANSI_BLUE +"Hello from " + currentThread().getName());
 
        try {
-           Thread.sleep(3000);
+           Thread.sleep(5000);
            // Exception will be thrown if any other thread interrupts
        }catch(InterruptedException e) {
            System.out.println(ANSI_BLUE + "Another Thread Woke Me Up");

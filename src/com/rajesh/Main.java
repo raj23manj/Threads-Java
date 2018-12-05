@@ -66,8 +66,18 @@ public class Main {
                         another Thread terminated, so im running again
                         3 seconds passed i'm awake
                     * */
-                    anotherThread.join();
-                    System.out.println(ANSI_RED + "another Thread terminated, so im running again");
+                    //anotherThread.join(); // this thread excutes then only goes down to sout
+                    anotherThread.join(2000); // see's for 2 sec's, after that just goes on executing
+                    /*
+                        Hello World!
+                        Hello from === Another Thread ===
+                        Hello From Anonymous Class Thread
+                        Hello World again main thread!
+                        Hello from MyRunnables implementation Anonymous
+                        another Thread terminated or timed out, so im running again
+                        3 seconds passed i'm awake
+                    * */
+                    System.out.println(ANSI_RED + "another Thread terminated or timed out, so im running again");
                 } catch(InterruptedException e) {
                     // catching exception if at all it gets interrupted by some other thread
                     System.out.println(ANSI_RED + "I could'nt wait afterall, i was interuupted !");

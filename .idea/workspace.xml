@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="053b1c64-393c-4059-89ca-ec299389198a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Threads/com/rajesh/AnotherThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Threads/com/rajesh/AnotherThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Threads/com/rajesh/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Threads/com/rajesh/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/rajesh/AnotherThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rajesh/AnotherThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/rajesh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/rajesh/Main.java" afterDir="false" />
     </list>
@@ -36,25 +34,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="1881" />
-          <entry key="txt" value="130" />
+          <entry key="java" value="2025" />
+          <entry key="txt" value="167" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1881" />
-          <entry key="PLAIN_TEXT" value="131" />
+          <entry key="JAVA" value="2025" />
+          <entry key="PLAIN_TEXT" value="168" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/rajesh/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+            <state relative-caret-position="489">
+              <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -68,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/rajesh/AnotherThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -110,8 +108,8 @@
         <option value="$PROJECT_DIR$/src/AnotherThread.java" />
         <option value="$PROJECT_DIR$/src/com/rajesh/ThreadColor.java" />
         <option value="$PROJECT_DIR$/src/com/rajesh/MyRunnable.java" />
-        <option value="$PROJECT_DIR$/src/com/rajesh/Main.java" />
         <option value="$PROJECT_DIR$/src/com/rajesh/AnotherThread.java" />
+        <option value="$PROJECT_DIR$/src/com/rajesh/Main.java" />
       </list>
     </option>
   </component>
@@ -122,10 +120,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
-    <option name="y" value="70" />
-    <option name="width" value="1268" />
-    <option name="height" value="634" />
+    <option name="x" value="107" />
+    <option name="y" value="23" />
+    <option name="width" value="1168" />
+    <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -161,7 +159,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544010455393" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544010824704" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,11 +222,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544008022538</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Simple Join, when thread is sleeping">
+      <created>1544010484970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544010484970</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="70" width="1268" height="634" extended-state="0" />
+    <frame x="1769" y="-414" width="1400" height="1021" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -236,7 +241,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20717782" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18703976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32841328" />
       <window_info anchor="bottom" id="Terminal" weight="0.32841328" />
@@ -244,7 +249,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32841328" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37136707" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -292,7 +297,8 @@
     <MESSAGE value="First way of implementing Threads" />
     <MESSAGE value="Second way of implementing Threads, and what happens when run() is called instead of start()" />
     <MESSAGE value="Making Thread to sleep" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making Thread to sleep" />
+    <MESSAGE value="Simple Join, when thread is sleeping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple Join, when thread is sleeping" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/Concurrency-in-Java-Threads-Source-code/src/com/timbuchalka/ThreadColor.java">
@@ -323,17 +329,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/rajesh/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/rajesh/AnotherThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/rajesh/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="77" column="50" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
         </state>
       </provider>
     </entry>
