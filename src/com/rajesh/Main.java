@@ -1,9 +1,12 @@
 package com.rajesh;
 
+import static com.rajesh.ThreadColor.ANSI_GREEN;
+import static com.rajesh.ThreadColor.ANSI_PURPLE;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println(ANSI_PURPLE + "Hello World!");
 
         Thread anotherThread = new AnotherThread();
 
@@ -24,11 +27,11 @@ public class Main {
         // Anonymous Class Thread Creation
         new Thread() {
             public void run() {
-                System.out.println("Hello From Anonymous Class Thread");
+                System.out.println(ANSI_GREEN + "Hello From Anonymous Class Thread");
             }
         }.start();
 
-        System.out.println("Hello World again main thread!");
+        System.out.println(ANSI_PURPLE + "Hello World again main thread!");
 
         /*
         * o/p varies
