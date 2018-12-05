@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(ANSI_PURPLE + "Hello World!");
         // implementing via sub-classing Thread class
-        Thread anotherThread = new AnotherThread();
+        final Thread anotherThread = new AnotherThread();
         anotherThread.setName("=== Another Thread ===");
 
         // invoke run method to start thread
@@ -44,10 +44,41 @@ public class Main {
             public void run() {
                 //super.run(); calls MyRunnable classes run
                 System.out.println(ANSI_RED + "Hello from MyRunnables implementation Anonymous");
+                try{
+                    // when a thread is put to sleep here, anotherThread instead making it to sleep
+                    // for 3 sec's, we can make it join to this(myRunnableTHread) thread, once this
+                    // thread execution is completed it will start anotherThread, then it will execute the code following
+                    //  System.out.println(ANSI_RED + "another Thread terminated, so im running again");
+                    // o/p will be
+                    /*
+                    * Hello World!
+                        Hello from === Another Thread ===
+                        Hello From Anonymous Class Thread
+                        Hello World again main thread!
+                        Hello from MyRunnables implementation Anonymous
+                        3 seconds passed i'm awake
+                        another Thread terminated, so im running again
+                     * and not
+                     * Hello from === Another Thread ===
+                        Hello From Anonymous Class Thread
+                        Hello World again main thread!
+                        Hello from MyRunnables implementation Anonymous
+                        another Thread terminated, so im running again
+                        3 seconds passed i'm awake
+                    * */
+                    anotherThread.join();
+                    System.out.println(ANSI_RED + "another Thread terminated, so im running again");
+                } catch(InterruptedException e) {
+                    // catching exception if at all it gets interrupted by some other thread
+                    System.out.println(ANSI_RED + "I could'nt wait afterall, i was interuupted !");
+                }
+
             }
         });
 
         myRunnableTHread.start();
+        // interrupting AnotherThread from main thread
+        //anotherThread.interrupt();
 
         System.out.println(ANSI_PURPLE + "Hello World again main thread!");
 
