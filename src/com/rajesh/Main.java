@@ -1,20 +1,22 @@
 package com.rajesh;
 
-import static com.rajesh.ThreadColor.ANSI_GREEN;
-import static com.rajesh.ThreadColor.ANSI_PURPLE;
+import static com.rajesh.ThreadColor.*;
 
 public class Main {
 
     public static void main(String[] args) {
         System.out.println(ANSI_PURPLE + "Hello World!");
-
+        // implementing via sub-classing Thread class
         Thread anotherThread = new AnotherThread();
+        anotherThread.setName("=== Another Thread ===");
 
         // invoke run method to start thread
         // start invokes the run method
 
         //try {
-            anotherThread.start();
+        anotherThread.start(); // prints hello from another thread
+         // wrong
+        //anotherThread.run(); // prints hello from main
 
             /*
              *  this throws an exception java.lang.IllegalThreadStateException
@@ -30,6 +32,22 @@ public class Main {
                 System.out.println(ANSI_GREEN + "Hello From Anonymous Class Thread");
             }
         }.start();
+
+        // implementing the interface
+        // normal way
+//        Thread myRunnableTHread = new Thread(new MyRunnable());
+//        myRunnableTHread.start();
+        // anonymous class
+        // this preffered way
+        Thread myRunnableTHread = new Thread(new MyRunnable() {
+            @Override
+            public void run() {
+                //super.run(); calls MyRunnable classes run
+                System.out.println(ANSI_RED + "Hello from MyRunnables implementation Anonymous");
+            }
+        });
+
+        myRunnableTHread.start();
 
         System.out.println(ANSI_PURPLE + "Hello World again main thread!");
 
